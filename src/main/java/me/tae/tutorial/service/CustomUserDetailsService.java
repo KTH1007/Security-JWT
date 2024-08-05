@@ -1,6 +1,5 @@
 package me.tae.tutorial.service;
 
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import me.tae.tutorial.entity.User;
 import me.tae.tutorial.repository.UserRepository;
@@ -10,6 +9,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.Collectors;
